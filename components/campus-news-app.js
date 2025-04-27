@@ -19,9 +19,12 @@ class NewsApp extends HTMLElement{
                 }
         </style>
         <h1>Campus News</h1>
+
+        <campus-category-filters></campus-category-filters>
         `
+        // tras filtrar o seleccionar:
         // this.dispatchEvent(new CustomEvent("campus:debug-update", {
-        //     detail: {
+            //     detail: {
         //       category: currentCategory,
         //       selectedId: currentArticleId,
         //       total: campusArticles.length,
@@ -38,7 +41,6 @@ customElements.define('campus-news-app', NewsApp)
 export default NewsApp
 
 
-// tras filtrar o seleccionar:
 
 
 

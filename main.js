@@ -1,4 +1,4 @@
-import './components/campus-category-filters.js'
+import './components/campus-category-filters.js';
 import './components/campus-debug-panel.js'
 import './components/campus-news-app.js'
 import './components/campus-news-detail.js'

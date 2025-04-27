@@ -27,3 +27,5 @@ class CampusNewsItem extends HTMLElement {
   // Métodos para renderizar datos y emitir evento…
 }
 customElements.define("campus-news-item", CampusNewsItem);
+
+export default CampusNewsItem
