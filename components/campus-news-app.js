@@ -11,13 +11,12 @@ class NewsApp extends HTMLElement{
                 margin: 24px 0;
                 letter-spacing: 1.5px;
                 text-transform: uppercase;
-                background: linear-gradient(90deg, #3a86ff, #4361ee, #5f0f40);
+                background: linear-gradient(90deg, #1e3a8a, #1e40af, #1e3a8a);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                text-shadow: 3px 3px 6px rgba(58, 134, 255, 0.2);
+                text-shadow: 2px 2px 5px rgba(30, 58, 138, 0.5);
                 font-family: 'Poppins', sans-serif;
                 }
-
         </style>
         <h1>Campus News</h1>
         `
