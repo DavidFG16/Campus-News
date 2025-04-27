@@ -16,11 +16,15 @@ class NewsApp extends HTMLElement{
                 -webkit-text-fill-color: transparent;
                 text-shadow: 2px 2px 5px rgba(30, 58, 138, 0.5);
                 font-family: 'Poppins', sans-serif;
+                background-color:white;
                 }
+            .h1{
+            background-color:white;}
         </style>
-        <h1>Campus News</h1>
+        
+       <div class="h1"><h1>Campus News</h1><div>
 
-        <campus-category-filters></campus-category-filters>
+        <slot></slot>
         `
         // tras filtrar o seleccionar:
         // this.dispatchEvent(new CustomEvent("campus:debug-update", {
@@ -38,7 +42,7 @@ class NewsApp extends HTMLElement{
 
 customElements.define('campus-news-app', NewsApp)
 
-export default NewsApp
+
 
 
 
