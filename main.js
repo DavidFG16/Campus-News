@@ -5,7 +5,7 @@ import './components/campus-news-detail.js'
 import './components//campus-news-list.js'
 
 // Camos-News-List
-const campusArticles = [
+export const campusArticles = [
     {
       id: 1,
       title: "Jornada de puertas abiertas en Ingeniería",

@@ -43,10 +43,10 @@ class CategoryFilters extends HTMLElement {
       </style>
         
         <div id="categorys">
-          <button data-category="Todas">Todas</button>
-          <button data-category="Eventos">Eventos</button>
-          <button data-category="Investigación">Investigación</button>
-          <button data-category="Deportes">Deportes</button>
+          <button filter-data="Todas">Todas</button>
+          <button filter-data="Eventos">Eventos</button>
+          <button filter-data="Investigación">Investigación</button>
+          <button filter-data="Deportes">Deportes</button>
         </div>
       `;
   
@@ -60,17 +60,22 @@ class CategoryFilters extends HTMLElement {
           button.classList.add('selected');
         });
       });
-
-
-      this.dispatchEvent(new CustomEvent("campus:category-change", {
-        detail: { category: "Investigación" },
-        bubbles: true,
-        composed: true
-      }));
+      
+      shadow.querySelectorAll('button').forEach(button =>{
+        button.addEventListener('click', (e)=>{
+          const category = e.target.getAttribute('filter-data')
+          this.dispatchEvent(new CustomEvent('filter-selected', {
+            detail: {category},
+            bubbles:true,
+            composed:true
+          }))
+        })
+      })
+      
     }
   }
-  
-  customElements.define("campus-category-filters", CategoryFilters);
+    customElements.define("campus-category-filters", CategoryFilters);
+  export default CategoryFilters
   
 
   

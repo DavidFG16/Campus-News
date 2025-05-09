@@ -26,17 +26,6 @@ class NewsApp extends HTMLElement{
 
         <slot></slot>
         `
-        // tras filtrar o seleccionar:
-        // this.dispatchEvent(new CustomEvent("campus:debug-update", {
-            //     detail: {
-        //       category: currentCategory,
-        //       selectedId: currentArticleId,
-        //       total: campusArticles.length,
-        //       filtered: filteredList.length
-        //     },
-        //     bubbles: true,
-        //     composed: true
-        //   }));
     }
 }
 
